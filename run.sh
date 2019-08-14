@@ -2,8 +2,8 @@
 
 # Assumes this is run from the same directory as setup.sh, so need to cd into weld-core repo
 pushd .
-cd weld-core
 export JBOSS_HOME=`pwd`/wildfly-17.0.1.Final
+cd weld-core
 
 # Run embedded container tests:
 mvn clean verify -f jboss-tck-runner/pom.xml
